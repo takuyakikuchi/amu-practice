@@ -2,11 +2,10 @@
   margin: 0;
   padding: 0;
 }
-
+/* --------------- Homepage ---------------- */
 .load {
   animation: slide 2s;
 }
-
 .slider {
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,14 +14,12 @@
   height: 100vh;
   animation: slide 30s infinite;
 }
-
 .content {
   color: #fff;
   width: 100%;
   height: 100vh;
   background-color: rgba(0,0,0,0.5);
 }
-
 .principal {
   left: 50%;
   top: 50%;
@@ -31,11 +28,9 @@
   letter-spacing: 5px;
   text-align: center;
 }
-
 .principal h1{
   font-size: 70px;
 }
-
 @keyframes slide {
   0% {
     background-image: url('home_1.jpg');
@@ -60,5 +55,27 @@
   }
   100% {
     background-image: url('home_4.jpg');
+  }
+}
+/* ---------------- About ----------------- */
+#about {
+  width: 100%;
+  height: 100vh;
+  background-color: #BFB8A0;
+}
+.container {
+  margin-right: auto;
+  margin-left:  auto;
+  width: 50%;
+}
+#welcome {
+  animation: welcome 5s linear 0s;
+}
+@keyframes welcome{
+  from{
+    opacity: 0;
+    }
+  to{
+    opacity: 1;
   }
 }
