@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <link rel="stylesheet" href="../stylesheet/style.css">
   <title>amu</title>
 </head>
 <body>
   <div id="home-slide">
-    <div id="welcome">
-      <h1>Welcome to amu</h1>
-      <p>お客様の「なりたい」を一緒に叶えます</p>
+    <div class="home-message" v-show="welcome">
+      <h1>amu</h1>
     </div>
   </div>
+  <script src="../javascript/app.js"></script>
 </body>
 </html>
